@@ -1,0 +1,12 @@
+Voting pod deletion -- Forntend all works fine
+Backend -- POD Restarted, New POD is taken Over the service
+
+while Deleting the worker app, new worker will Spron,Voting Pod Still Works.
+New Worker app Connect to Db & redis, Data is also not lost.
+
+
+While Deleting the Db POD - Observed the Restart
+Observed Container has made Restart
+Worker & result App also got Restarted & find the New DB POD
+Error Handling is done by Worker at Program level
+The old data logs  has been deleted
